@@ -19,6 +19,11 @@ import java.util.Map;
 @RestController
 public class DemoController {
 
+    @GetMapping("/slideDemo")
+    public ModelAndView slideDemo() {
+        return new ModelAndView("demo/slide");
+    }
+
     @GetMapping("/navDemo")
     public ModelAndView navDemo() {
         return new ModelAndView("demo/nav");
