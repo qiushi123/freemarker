@@ -17,7 +17,7 @@
 				<tr>
 					<th>id</th>
 					<th>姓名</th>
-					<th>微信</th>
+					<th>wechat</th>
 					<th colspan="2">操作</th>
 				</tr>
 				</thead>
@@ -76,7 +76,6 @@
 		</div>
 	</div>
 </div>
-
 
 </body>
 </html>

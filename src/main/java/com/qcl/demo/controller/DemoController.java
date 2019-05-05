@@ -19,6 +19,16 @@ import java.util.Map;
 @RestController
 public class DemoController {
 
+    @GetMapping("/navDemo")
+    public ModelAndView navDemo() {
+        return new ModelAndView("demo/nav");
+    }
+
+    @GetMapping("/cardDemo")
+    public ModelAndView cardDemo() {
+        return new ModelAndView("demo/card");
+    }
+
     /*
      * 分页效果的实现
      * */
@@ -42,6 +52,6 @@ public class DemoController {
         map.put("totalPage", totalPage);
         map.put("currentPage", page);
         map.put("size", size);
-        return new ModelAndView("demo/list", map);
+        return new ModelAndView("demo/pagelist", map);
     }
 }
